@@ -1,0 +1,393 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="css/style.css">
+       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        $(document).ready(function(){
+            $('#bars').click(function(){
+                $('.rightside').toggleClass('show');
+                $('.sidebar').toggleClass('hide');
+                $('.g').toggleClass('showfull');
+            });
+        });
+        
+        
+        </script>
+        <div class="container">           
+           
+            <div class="sidebar">         
+                <div class="logo" >
+                <div><h2>GeekyAnts</h2></div>
+                </div>
+                    <div class="main">Main</div>
+                
+                <div class="nav">
+                    <ul>
+                        <li>
+                          <a href=""> <i class="fa fa-home"></i> Dashboard
+                            </a>
+                            <span class="number" style="background-color: #6471D7">2</span>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa fa-calendar"></i>Calender</a></li>
+                        <li>
+                          <a href="">  <i class="fa fa-envelope"></i>Email</a>
+                          <i class="fa fa-chevron-right" style="margin-left:auto"></i>
+                        </li>
+                        <li>
+                           <a href=""> <i class="fa fa-cube"></i>UI elements:</a>
+                           <i class="fa fa-chevron-right"style="margin-left:auto"></i>
+                        </li>
+                        <li>
+                           <a href=""> <i class="fa fa-file"></i>Forms</a>
+                           <span class="number" style="background-color: #50AA9A;justify-content:end">9</span>
+                        </li>
+                        <li>
+                          <a href=""> <i class="fas fa-pie-chart"></i> Charts</a>
+                          <i class="fa fa-chevron-right"style="margin-left:auto"></i>
+                        </li>
+                        <li>
+                          <a href=""> <i class="fa fa-th-large"></i> Table</a>
+                          <i class="fa fa-chevron-right"style="margin-left:auto"></i>
+                        </li>
+                        <li>
+                          <a href=""> <i class="fa fa-smile-o"></i> Icon</a>
+                          <i class="fa fa-chevron-right" style="margin-left:auto"></i> </li>
+                        <li>
+                           <a href=""><i class="fa fa-map-marker"></i>Maps</a>
+                           <span class="number" style="background-color: #E94465">2</span></li>
+                    </ul>
+                </div>
+
+
+            </div>    
+
+            
+            <div class="rightside">         
+                
+                
+                <div class="header">
+                    
+                        
+                          <div style="flex:0.3">
+                    <i class="fa fa-bars" id="bars" ></i>
+                    </div>
+                    <div style="flex:5" class="g">
+                    <button id="create"style="padding:7px;width:81px;height:35px;border:none;background-color: #F8F9FB">
+                    <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:12px">
+                        Create<i class="fa fa-sort-down"></i></span></button>
+                </div>
+                    
+                
+                        
+                    
+                    
+                    <div style="flex:1">
+                    <input type="text" id="search"placeholder="Search.." 
+                    style="font-size:14px;padding:10px;outline:none;height:36px;width:195px;border-radius:20px;background-color: #E1E1EB;border:hidden">
+                </div>
+                <div style="flex:1">
+                      <select>
+                          <option>
+                              <span><img src="images/flag.png" style="width:20px;"></img>
+                            <span>English</span>
+                            <i class="fa fa-arrow-down"></i>
+                            </span>
+                        </option>
+                      </select>
+                </div>
+                <div style="flex:0.5">
+                    <i class="fa fa-bell-o" id="bell"></i>
+                </div>
+                <div style="flex:0.5">
+                    <i class="fa fa-crop"></i>
+                </div>
+                   <div style="flex:0"> <img src="images/Majin_Vegeta.jpg"></img>
+                    </div>
+                    </div>
+                <div class="body">
+                    <div class="dashboard">
+                        <div style="flex:auto"><h3>Dashboard</h3>
+                        <p style="font-size:14px;padding-top:10">Welcome to Veltrix dashboard</p></div>
+                        <button type="button" class="edit sizeofsettings"><i class="fa fa-gear"></i> Settings</button>
+                        
+                    </div>              
+                        <div class="card-view">
+                                <div class="card">
+                                    <div class="card-upper">
+                                    <div class="card-left">
+                                        <div class="chota-div">
+
+                                            <i class="fa fa-clone"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-right">
+                                        
+                                       <div class="badge" style="flex:1">
+                                        <div class="badgem">
+                                            <div class="badgeup exotic_clr" ></div>
+                                            <div class="badgedown exotic_clr"></div>
+                                        </div>
+                                        <div class="badgew exotic_clr textwhite" style="background-color:#4CA197">
+                                            +12%
+
+                                        </div>
+
+                                       </div>
+                                       <div class="info">
+                                            <div style="margin-bottom:6px;color:#B0B3F5;font-size:14px">ORDERS</div>
+                                            <div style="font-size:20px">1,685<i class="fa fa-arrow-up"style="margin-left:15px;color:#4CA197"></i></div>
+                                              </div>
+      
+                                    </div>
+                                </div>
+                                    <div class="card-bottom">
+                                        <span style="float:left">
+                                        Since last month</span>
+                                    <i class="fa fa-arrow-right" style="float:right"></i></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-upper">
+                                        <div class="card-left" >
+                                            <div class="chota-div">
+                                                <i class="fa fa-sticky-note"></i>
+                                            
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="card-right">
+                  
+
+                                            <div class="badge">
+                                                <div class="badgem">
+                                                    <div class="badgeup exotic_red" ></div>
+                                                    <div class="badgedown exotic_red"></div>
+                                                </div>
+                                                <div class="badgew textwhite" style="background-color: #E9446C">
+                                                    -28%
+        
+                                                </div>
+        
+                                               </div>
+                                               <div class="info">
+                                                    <div style="margin-bottom:6px;color:#B0B3F5;font-size:14px">REVENUE</div>
+                                                    <div style="font-size: 20px">52,638
+                                                        <i class="fa fa-arrow-down"style="margin-left:15px;color:#E9446C"></i>
+                                                    </div>
+                                                      </div>
+                                        </div>
+                                    </div>
+                                        <div class="card-bottom">
+                                            <span style="float:left">
+                                            Since last month</span>
+                                            <i class="fa fa-arrow-right" style="float:right"></i></p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-upper">
+                                            <div class="card-left">
+                                                <div class="chota-div">
+                                                    <i class="fa fa-pencil"></i>
+                                            
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card-right">
+                                                
+                                                <div class="badge">
+                                                    <div class="badgem">
+                                                        <div class="badgeup exotic_blue" ></div>
+                                                        <div class="badgedown exotic_blue"></div>
+                                                    </div>
+                                                    <div class="badgew textwhite" style="background-color: #3BA5F8">
+                                                        00%
+            
+                                                    </div>
+            
+                                                   </div>
+                                                   <div class="info">
+                                                        
+                                                        <div style="margin-bottom:6px;color:#B0B3F5;font-size: 14px">AVERAGE PRICE</div>
+                                                        <div style="font-size: 20px">15.8<i class="fa fa-arrow-up"style="margin-left:15px;color:#4CA197"></i></div>
+                                                          
+                                        </div>
+                                            </div>
+                                        </div>
+                                            <div class="card-bottom">
+                                                <span style="color:#B0B3F5;float:left">
+                                                Since last month</span>
+                                                <i class="fa fa-arrow-right" style="float:right"></i></p>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-upper">
+                                                <div class="card-left">
+                                                    <div class="chota-div">
+                                                        <i class="fa fa-briefcase"></i>
+                                            
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="card-right">
+                                                        
+                                                    <div class="badge">
+                                                        <div class="badgem">
+                                                            <div class="badgeup exotic_yel" ></div>
+                                                            <div class="badgedown exotic_yel"></div>
+                                                        </div>
+                                                        <div class="badgew textwhite" style="background-color: #F5B433">
+                                                            00%
+                
+                                                        </div>
+                
+                                                       </div>
+                                                       <div class="info">
+                                                            <div style="margin-bottom:6px; color:#B0B3F5;font-size: 14px">PRODUCT SOLD</div>
+                                                            <div style="font-size: 20px">2346<i class="fa fa-arrow-up" style="margin-left:15px;color:#4CA197"></i></div>
+                                                              </div>
+                                                </div>
+                                            </div>
+                                                <div class="card-bottom">
+                                                    <span style="float:left">
+                                                    Since Last Month</span>
+                                                    <i class="fa fa-arrow-right" style="float:right"></i></p>
+                                                </div>
+                                        </div>
+                                        
+                                
+
+                        </div>
+                
+                        <div class="chat-view">
+                            <div class="latest-trans">
+                              <div style="padding:20px">  Latest Transactions</div>
+                                <table class="table">
+                                    <tr>
+                                        <td>
+                                            (#)Id:
+                                        </td>
+                                    <td>Name:</td>
+                                    
+                                    <td>
+                                        Date:
+                                    </td>
+                                    <td>Amount:</td>
+                                    <td>Status</td>
+                                    <td></td>
+                                </tr>
+                                    <tr>
+                                        <td>#14256</td>
+                                        <td style="display:flex;flex-direction:row;justify-content:space-between;align-items:center "><div><img src="images/goku.jpg"></img></div>
+                                        <div style="flex:2">Philip Smead</div></td>
+                                        <td>15/1/2018</td>
+                                        <td>$94</td>
+                                        <td><button class="greenc btn" >Delivered</button></td>
+                                        <td><button class="edit sizeofedit" type="button">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#14256</td>
+                                        <td style="display:flex;justify-content:space-between;align-items: center"><div><img src="images/Majin_Vegeta.jpg"></img></div>
+                                            <div style="flex:2">Robert Wayne</div></td>
+                                        <td>16/1/2018</td>
+                                        <td>$112</td>
+                                        <td><button class="yelc btn">Pending</button></td>
+                                        <td><button class="edit sizeofedit" type="button">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#14256</td>
+                                        <td style="display:flex"><div><img src="images/Majin_Vegeta.jpg"></img></div>
+                                           <div style="flex:2"> Brent Shipley</div></td>
+                                        <td>17/1/2018</td>
+                                        <td>$116</td>
+                                        <td><button class="greenc btn">Delivered</button></td>
+                                        <td><button class="edit sizeofedit"type="button">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#14259</td>
+                                        <td style="display:flex"><div><img src="images/g.jpeg"></img></div>
+                                            <div style="flex:2">Alberto Jackson</div></td>
+                                        <td>18/1/2018</td>
+                                        <td>$116</td>
+                                        <td><button class="redc btn">Cancel</button></td>
+                                        <td><button class="edit sizeofedit"type="button">Edit</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>#14260</td>
+                                        <td style="display:flex;flex-direction:row;align-items: center;justify-content:space-between"><div><img src="images/got.jpeg"></img></div>
+                                            <div style="flex:2">David Sachez</div></td>
+                                        <td>19/1/2018</td>
+                                        <td>$116</td>
+                                        <td><button class="greenc btn">Delivered</button></td>
+                                        <td><button class="edit sizeofedit"type="button">Edit</button></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="chat">
+                                <div style="padding:14px"><h4>Chat</h4></div>
+                                <div class="chatbox">
+                                    <div class="message">
+                                        <img src="images/goku.jpg"></img>
+                                    <div class="triangle"></div>
+                                    <div class="text">
+                                        <h3>John Doe</h3>
+                                        <p>Hello!</p>
+                                    </div>
+                                    </div>
+                                    <div class="countermessage">
+                                            <img src="images/Majin_Vegeta.jpg"></img>
+                                            <div class="ctriangle"></div>
+                                            <div class="ctext">
+                                                <h3>Smith</h3>
+                                                <p>Hi! How are you ? What about our next meeting!</p>
+                                            </div>
+
+                                    </div>
+                                    <div class="message">
+                                            <img src="images/goku.jpg"></img>
+                                        <div class="triangle"></div>
+                                        <div class="text">
+                                            <h3>John Doe</h3>
+                                            <p>Everything is fine!</p>
+                                        </div>
+                                        </div>
+                                        <div class="countermessage">
+                                                <img src="images/Majin_Vegeta.jpg"></img>
+                                                <div class="ctriangle"></div>
+                                                <div class="ctext">
+                                                    <h3>Smith</h3>
+                                                    <p>Wow! That's great.</p>
+                                                </div>
+    
+                                        </div>
+                                        <div class="countermessage">
+                                            <img src="images/Majin_Vegeta.jpg"></img>
+                                            <div class="ctriangle"></div>
+                                            <div class="ctext">
+                                                <h3>Smith</h3>
+                                                <p>Let's have a match!!</p>
+                                            </div>
+
+                                    </div>
+                                </div>
+                                <div class="enterchat">
+                                    <input type="text" style="width:230px;height:35px;font-size:15px;border-radius:10" placeholder="Enter your text">
+                                    <button type="button" style="background-color: #4da49a;color:white;height:35px;width:70px">Send</button>
+                                </div>
+                            </div>
+                            </div> 
+                        
+                </div>
+                 
+            </div> 
+            </div>
+    </body>
+    </html>

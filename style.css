@@ -1,0 +1,488 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    display:flex;
+}
+.sidebar>.logo
+{
+    color:white;
+    width:100%;
+    height:80px;
+    align-items: center;
+    padding-top:20px;
+    font-size:16px;
+}
+.logo h2
+{
+    text-align: center;
+    width:100%;
+
+}
+.main
+{
+
+    bottom:0;
+    left:4;
+    color:#8896AB;
+    font-size:15px;
+    
+
+}
+.sidebar
+
+    {
+    
+    min-width:220px;
+    
+    height:100%;
+    background-color:#343549;   
+    font-family:'Times New Roman', Times, serif;
+    position:fixed;
+
+}
+.rightside
+{
+  
+  padding-left:220px;
+  flex:2;
+}
+.show
+{
+    
+padding-left:0px;
+    
+}
+.showfull
+{
+    flex-grow:10;
+}
+.hide 
+{
+    left:-220;
+}
+.header
+{
+    flex:1;
+    background-color:#EDECF1;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;      
+    position:fixed;
+    top:0;
+    right:0;
+    left:221px;
+    z-index:999;
+    padding:10 30px;
+    flex:1;   
+}
+
+
+
+#search
+{
+    margin-left:auto;
+}
+
+
+.body
+{
+    background-color: #F8F8FA;
+    padding-top:68px;
+    
+    left:220px;
+    
+    
+}
+.card-view
+{
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding-bottom:24px;
+    align-items:center;
+
+}
+.card
+{   
+    border-radius:7px;
+    background-color:#626ed4;
+    height:150px;
+    padding-left:20px;
+    width: 255px;
+    flex:auto;
+    margin:10;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+.nav
+{
+    width:100%;
+    margin:0;
+    padding:0;
+    color:#e6e6e6;
+}
+.nav ul
+{
+
+    list-style-type: none;
+    color:#8896AB;
+    width:100%;
+    margin:0;
+}
+.nav ul li
+{
+    padding:15px 7px;
+    display:flex;
+    
+}
+.nav ul li a
+{
+    color:#8896AB;
+    text-decoration: none;
+}
+.nav ul li a:hover
+{
+    
+    color:white;
+    transition:0.3s all;
+    font-size:18px;
+    
+}
+.nav ul>li:hover
+{
+    background-color: #3A3A50;
+}
+.number
+{
+    color:white;
+    margin-left:auto;
+    border-radius:40%;
+    
+    padding:2px 8px;
+}
+.nav ul li i
+{
+    padding-right:10px;
+}
+.dashboard
+{
+display:flex;
+padding:20;
+}
+
+   
+
+.latest-trans
+{
+    background-color:white;
+    
+    flex:auto;
+    justify-content: space-evenly;
+    margin:15px;
+    margin-top:-1px;
+    /* padding-left:29px;
+    flex:1;
+    margin-left:22px; */
+    
+    
+    
+}
+
+
+.card-upper
+{
+    
+    display:flex;
+    flex-direction:row;
+}
+
+.card-left
+{
+    padding:17px 13px;
+}
+.card-right
+{
+    flex-grow:2;
+    flex-direction:row;
+    padding:10px;
+    justify-content: space-between;
+}
+.card-bottom
+{
+    padding:13px;
+    font-size:13px;
+    color:#B0B3F5;
+}
+.table
+{
+    
+    border-collapse:collapse;
+    flex-grow:2;
+    flex:auto;
+    width:100%;
+    
+    
+}
+.table tr
+{
+    border-top:1px solid black;
+}
+.table tr td 
+{
+    padding:10px;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.table tr td div
+{
+    flex:1;
+    padding-left:2px;
+    padding-bottom:4px;
+     align-items: center;
+}
+.table tr:hover
+{
+    background-color: #F8F9FB;
+}
+.edit
+{
+    background-color: #626Ed4;
+    border-radius:5px;
+    color:white;
+}
+.sizeofsettings
+{
+width:105px;
+height:33px;
+
+}
+.sizeofedit
+{
+    width:38px;
+    height:28px;
+}
+.chat-view
+{
+    display:flex;
+    flex-grow:1;
+    flex-wrap:wrap;
+    margin:10;
+    
+}
+.chat
+{
+    background-color: white;
+    padding:10px;
+    flex:1.5;
+    
+}
+.chatbox
+{
+    height:317px;
+    overflow:auto;
+}
+.chatbox h3
+{
+    color:#33488D;
+}
+.greenc
+{
+    background-color: #2aa39a;
+    color:white;
+}
+.yelc
+{
+    background-color:#F8b425 ;
+    color:white;
+}
+.redc
+{
+    background-color:#E94B67;
+    color:white;
+}
+.enterchat
+{
+    width:inherit;
+    padding:6px;
+    display:flex;
+    justify-content: space-around;
+}
+.triangle
+{
+    height: 0;
+    width:0;
+    border-style:solid;
+    border-width:0 20px 20px 20px;
+    border-color:transparent #E1E4F7 transparent transparent;
+}
+.ctriangle
+{
+    height:0;
+    width:0;
+    border-style:solid;
+    border-width:20px  20px   20px 0;
+    border-color: #EFF0F4 transparent transparent transparent;
+}
+.message 
+{
+    display:flex;
+    flex-direction: row;
+}
+.countermessage
+{
+    display:flex;
+    flex-direction:row-reverse;
+}
+.text
+{
+    
+    padding:10px;
+    background-color: #E1E4F7;
+    border-radius:0 10px 10px 10px;
+    margin-bottom:20px;
+}
+.btn
+{
+    width:60px;
+    height:20px;
+    border-radius:10px;
+}
+.ctext
+{
+    padding:10px;
+    border-radius:10px 0 10px 10px;
+    background-color:#EFF0F4 ;
+    margin-bottom:20px;
+}
+img{
+    border-radius:50%;
+    height:40px;
+    width:40px;
+}
+select
+{
+    height:50px;
+    width:100px;
+    border:transparent;
+    background-color: inherit;
+}
+select option
+{
+    padding:20px;
+}
+.chota-div
+{
+    background-color:#7c83db;
+    width:50px;
+    height:50px;
+    border-radius:4px;
+    
+    padding:5px;
+    
+}
+.chota-div i
+{
+    font-size:30px;
+    margin-left:10px;
+    margin-top:10px;
+
+}
+.badge
+{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    padding-left:88px;
+    padding-top:10px;
+    
+    
+}
+.badgem
+{
+    display:flex;
+    flex-direction:column;
+}
+.badgeup
+{
+    height: 0;
+    width:0;
+    border-style:solid;
+    border-width:0px 11.5px  11.5px   11.5px ;
+
+}
+.badgedown
+{
+
+    height: 0;
+    width:0;
+    border-style:solid;
+    border-width: 11.5px 11.5px 0px 11.5px;
+    
+}
+.badgew 
+{
+    height:23px;
+    width:58px;
+    font-size:13px;
+    text-align:center;
+
+    
+}
+.exotic_clr
+{
+    border-color:transparent #4CA197 transparent transparent;
+
+}
+.exotic_red
+{
+    border-color:transparent #E9446C transparent transparent;
+}
+.exotic_blue
+{
+    border-color:transparent #3BA5F8 transparent transparent;
+}
+.exotic_yel
+{
+    border-color:transparent #F5B433 transparent transparent;
+}
+.textwhite
+{
+    color:white;
+}
+.info
+{
+    display:flex;
+    flex-direction:column;
+    padding:12px;
+}
+@media only screen and (max-width:772px)
+{
+    .sidebar, #bell ,#create
+    {
+        display: none;
+    }
+
+    .rightside{
+        padding-left: 0;
+    }
+    .header
+    {
+        left:0;
+    }
+    #search
+    {
+    width:300px;
+    }
+    
+    
+    
+}
